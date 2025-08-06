@@ -114,7 +114,7 @@ struct Breed: Codable {
 
 #### Leaderboard Screen
 - **Request**: `GET https://api.thedogapi.com/v1/breeds`
-- **Purpose**: Fetches a list of dog breeds including name, and image ID.
+- **Purpose**: Fetches a list of dog breeds including name and image ID.
 - **Response Handling**: Results are decoded into the `Breed` model and displayed in a table view.
   
 #### Results Screen
