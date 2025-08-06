@@ -44,15 +44,14 @@ Ever wondered what kind of dog you would be? Take our personality quiz and find 
 
 ### 2. Screen Archetypes
 
-- [ ] **Quiz Screen**
+- [x] **Quiz Screen**
     * Users can answer personality questions.
-- [ ] **Result Screen**
+- [x] **Result Screen**
     * Users can view their matched dog breed
 - [ ] **Login / Signup Screen**
     * User can create an account or log in to save and access their quiz results.
 - [ ] **User Profile / History Screen**
     * User can view their previously saved quiz results anytime.
-
 - [ ] **Popular Breeds Screen (Location-Based)**
     * User can see the most popular dog breeds matched by people nearby using location data.
 
@@ -72,9 +71,9 @@ Ever wondered what kind of dog you would be? Take our personality quiz and find 
 * => Creation Screen
 - [ ] Profile Screen
 * => Results Screen 
-- [ ] Quiz Screen
+- [x] Quiz Screen
 * => Results Screen 
-- [ ] Popular Breeds Screen (Leader Board)
+- [x] Popular Breeds Screen (Leader Board)
 * => None (future versions may include a leaderboard of all popular breeds)
 
 ## Wireframes
@@ -88,16 +87,38 @@ Ever wondered what kind of dog you would be? Take our personality quiz and find 
     </a>
   </div>
 
+## Video of Pawsonality Match App Demo
+  <div>
+    <a href="https://www.loom.com/share/17bd5829294b4d1192cbfe772f25d36f">
+      <p>Pawsonality Match App Design Project - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/17bd5829294b4d1192cbfe772f25d36f">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/17bd5829294b4d1192cbfe772f25d36f-8b24fa687e3375d1-full-play.gif">
+    </a>
+  </div>
+
 ## Schema 
 
-[This section will be completed in Unit 9]
+struct Question {
+    let text: String       
+    let answers: [String]   
+}
 
-### Models
-
-[Add table of models]
+struct Breed: Codable {
+    let name: String             
+    let temperament: String?      
+    let reference_image_id: String? 
+}
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### Leaderboard Screen
+- **Request**: `GET https://api.thedogapi.com/v1/breeds`
+- **Purpose**: Fetches a list of dog breeds including name, and image ID.
+- **Response Handling**: Results are decoded into the `Breed` model and displayed in a table view.
+  
+#### Results Screen
+- **Request**: `GET https://api.thedogapi.com/v1/breeds`
+- **Purpose**: Uses the user's quiz answers to match and display a dog breed with a similar temperament.
+- **Response Handling**: The app fetches a list of dog breeds, compares the `temperament` keywords with the user's selected answers, and displays the most relevant breed name, image, and description on the Results screen.
+
