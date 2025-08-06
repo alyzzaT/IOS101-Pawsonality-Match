@@ -18,9 +18,9 @@ Ever wondered what kind of dog you would be? Take our personality quiz and find 
 ### App Evaluation
 - **Category:** Entertainment
 - **Mobile:** The app uses location data (with user permission) to show users the most popular dog breeds matched by people nearby. Users also receive push notifications to stay updated about new features, quizzes, and special events. 
-- **Story:** Pawsonality Match offers lighthearted insight into users’ traits, making it feel like a fun conversation starter or icebreaker. It is entertaining, easy to share, and adds value by combining personality quizzes with pet education. Friends would likely enjoy trying it out and sharing results.
+- **Story:** Pawsonality Match offers lighthearted insight into users’ traits, making it feel like a fun conversation starter. It is entertaining, easy to share, and combines personality quizzes with pet information. Friends would likely enjoy trying it out and sharing results.
 - **Market:** This app appeals to a broad audience of dog lovers, especially children and families who enjoy fun, interactive quizzes.
-- **Habit:** Users are likely to try the app once or twice when they first discover it. After that, most will return occasionally. Push notifications may increase engagement frequency.
+- **Habit:** Users are likely to try the app once or twice when they first discover it. After that, most people will return occasionally. Push notifications may increase engagement frequency.
 - **Scope:**
   - **V1:** Users take a simple personality quiz and receive their dog breed match with a brief description. Users can also create profiles to save results and track changes over time.
   - **V2:** Add more quiz questions and multiple quiz themes
