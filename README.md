@@ -99,16 +99,18 @@ Ever wondered what kind of dog you would be? Take our personality quiz and find 
 
 ## Schema 
 
+```swift
 struct Question {
-    let text: String       
-    let answers: [String]   
+    let text: String
+    let answers: [String]
 }
 
 struct Breed: Codable {
-    let name: String             
-    let temperament: String?      
-    let reference_image_id: String? 
+    let name: String
+    let temperament: String?
+    let reference_image_id: String?
 }
+```
 
 ### Networking
 
