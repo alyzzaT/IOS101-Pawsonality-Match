@@ -122,5 +122,5 @@ struct Breed: Codable {
 #### Results Screen
 - **Request**: `GET https://api.thedogapi.com/v1/breeds`
 - **Purpose**: Uses the user's quiz answers to match and display a dog breed with a similar temperament.
-- **Response Handling**: The app fetches a list of dog breeds, compares the `temperament` keywords with the user's selected answers, and displays the most relevant breed name, image, and description on the Results screen.
+- **Response Handling**: The app fetches a list of dog breeds, compares the `temperament` keywords with the user's selected answers. It then displays the most relevant breed name, image, and description on the Results screen.
 
